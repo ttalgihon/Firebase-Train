@@ -1,5 +1,5 @@
 # Firebase-Train
-A train schedule application incorporating Firebase
+A train schedule application incorporating Firebase <br/>
 <img src="https://media.giphy.com/media/3oz8xtBx06mcZWoNJm/giphy.gif" width="250" height="160" alt-text="A cartoon dog riding a train while placing tracks in front of the toy train." />
 
 ## Purpose
