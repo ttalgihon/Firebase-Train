@@ -1,4 +1,4 @@
-<script src = "https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+{/* <script src = "https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script> */}
 
 // Initialize Firebase
 let config = {
@@ -9,4 +9,9 @@ let config = {
     storageBucket: "fir-train-fb7a6.appspot.com",
     messagingSenderId: "529292382408"
 };
-firebase.initializeApp(config);
+// Initialize the default app
+let defaultApp = firebase.initializeApp(config);
+console.log(defaultApp); //Check chrome inspector
+
+let defaultDatabase = defaultApp.database();
+console.log(defaultDatabase); //works
