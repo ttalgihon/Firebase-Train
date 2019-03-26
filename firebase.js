@@ -1,11 +1,13 @@
+require('dotenv').config();
+
 // Initialize Firebase
 let config = {
-    apiKey: APIKEY,
-    authDomain: AUTHDOMAIN,
-    databaseURL: DATABASEURL,
-    projectId: PROJECTID,
-    storageBucket: STORAGE,
-    messagingSenderId: MESSAGINGSENDERID
+    apiKey: process.env.APIKEY,
+    authDomain: process.env.AUTHDOMAIN,
+    databaseURL: process.env.DATABASEURL,
+    projectId: process.env.PROJECTID,
+    storageBucket: process.env.STORAGE,
+    messagingSenderId: process.env.MESSAGINGSENDERID
 };
 // Initialize the default app
 let defaultApp = firebase.initializeApp(config);
