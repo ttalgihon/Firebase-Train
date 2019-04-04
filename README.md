@@ -7,10 +7,13 @@ This is an open source project that gives the developer the opportunity to pract
 
 
 ## Built With
-* [Firebase](https://firebase.google.com/) - BaaS
-* [Moment.js](https://momentjs.com/) - JavaScript date library
-* [Bootstrap](https://getbootstrap.com/) - CSS responsive design framework
+* [HTML5](https://www.w3schools.com/html/default.asp) 
+* [CSS](https://www.w3schools.com/css/default.asp) 
+* [Javascript](https://www.w3schools.com/js/default.asp) 
 * [jQuery](https://jquery.com/) - JavaScript library
+* [Bootstrap](https://getbootstrap.com/) - CSS responsive design framework
+* [Moment.js](https://momentjs.com/) - JavaScript date library
+* [Firebase](https://firebase.google.com/) - BaaS (Back-end as a Service)
 
 
 ### Contribution

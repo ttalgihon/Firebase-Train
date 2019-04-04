@@ -1,23 +1,23 @@
-// Steps to complete:
-
-// 1. Create Firebase link
-// 2. Create initial train data in database
-// 3. Create button for adding new trains - then update the html + update the database
-// 4. Create a way to retrieve trains from the trainlist.
-// 5. Create a way to calculate the time way. Using difference between start and current time.
-//    Then take the difference and modulus by frequency. (This step can be completed in either 3 or 4)
-
 // Initialize Firebase
-var config = {
-    apiKey: "AIzaSyCcPFcbAjIsgXGQwE-A3AcOXkeD40qypE8",
-    authDomain: "train-times-93583.firebaseapp.com",
-    databaseURL: "https://train-times-93583.firebaseio.com",
-    storageBucket: "train-times-93583.appspot.com"
-  };
+let config = {
+  apiKey: process.env.APIKEY,
+  authDomain: process.env.AUTHDOMAIN,
+  databaseURL: process.env.DATABASEURL,
+  projectId: process.env.PROJECTID,
+  storageBucket: process.env.STORAGE,
+  messagingSenderId: process.env.MESSAGINGSENDERID
+};
+// Initialize the default app
+let defaultApp = firebase.initializeApp(config);
+console.log(defaultApp); //Check chrome inspector
+
+// Firebase Realtime Database (through the default app)
+let defaultDatabase = defaultApp.database();
+console.log(defaultDatabase); //Firebase works!
+
+  let trainData = firebase.database();
+
   
-  firebase.initializeApp(config);
-  
-  var trainData = firebase.database();
   
   // 2. Populate Firebase Database with initial data (in this case, I did this via Firebase GUI)
   // 3. Button for adding trains
